@@ -7,6 +7,8 @@ body {
   background-color: #9a7aff;
   color: white;
   padding: 0px 120px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #header {
@@ -22,7 +24,10 @@ body {
 
 #header-right-side {
   display: flex;
-  gap: 20px;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: end;
+  justify-content: space-between;
 }
 
 #header-right-side img {
@@ -68,6 +73,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-wrap: normal;
 }
 #section-2 h1 {
   font-size: 40px;
@@ -95,30 +101,53 @@ body {
   height: 100vh;
   background-color: #9a7aff;
   color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#left-box {
-  background-color: white;
-  color: #9a7aff;
-  border-inline-color: white;
-}
-#left-box button {
-  padding: 24px 16px;
-  background-color: #33c77e;
-  color: white;
-  border: none;
+  padding: 187px 0px 187px 187px;
+  gap: 64px;
   font-size: 16px;
   font-weight: bold;
-  width: 140px;
+  display: flex;
+  flex-direction: column;
 }
-#right-box {
-  background-color: #9a7aff;
-  border-inline-color: white;
+#scroll {
+  display: flex;
+  height: 100%;
+  overflow: auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+  scrollbar-width: none;
+  height: 700px;
+  padding: 32px 32px 32px 32px;
+  gap: 20px;
 }
-#right-box button {
+#frame1 {
+  padding: 24px 16px;
+  width: 510px;
+  height: 700px;
+  padding: 32px 32px 32px 32px;
+  border: 2px solid white;
+}
+#frame2 {
+  padding: 24px 16px;
+  width: 510px;
+  height: 700px;
+  padding: 32px 32px 32px 32px;
+  border: 2px solid white;
+}
+#frame3 {
+  padding: 24px 16px;
+  width: 510px;
+  height: 700px;
+  padding: 32px 32px 32px 32px;
+  border: 2px solid white;
+}
+#frame4 {
+  padding: 24px 16px;
+  width: 510px;
+  height: 700px;
+  padding: 32px 32px 32px 32px;
+  border: 2px solid white;
+}
+#section-3 button {
   padding: 24px 16px;
   background-color: #33c77e;
   color: white;
@@ -148,6 +177,10 @@ body {
   width: 33%;
   height: 100%;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #container-right-side {
